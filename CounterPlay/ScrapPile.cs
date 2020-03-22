@@ -1,7 +1,7 @@
 namespace CounterPlay
 {
-	public class ScrapPile
+	public class ScrapPile : Deck
 	{
-		
+		public Card[] GetCards() => Cards.ToArray();
 	}
 }

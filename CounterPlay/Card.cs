@@ -14,6 +14,13 @@ namespace CounterPlay
 		public CardType CardType;
 		public List<Effect> Effects;
 
+		public Card(int cost, CardType cardType, Effect[] effects)
+		{
+			Cost = cost;
+			CardType = cardType;
+			Effects = effects.ToList();
+		}
+
 		public class CardList
 		{
 			private List<Card> Cards;
