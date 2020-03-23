@@ -12,7 +12,7 @@ namespace CounterPlay
 			CheckFunction = checkFunction;
 		}
 		
-		public override void Do()
+		public override void Do(Player Target)
 		{
 			CheckFunction();
 		}

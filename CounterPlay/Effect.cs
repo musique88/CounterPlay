@@ -7,7 +7,8 @@ namespace CounterPlay
 	
 	public abstract class Effect
 	{
-		public abstract void Do();
+		public abstract void Do(Player Target);
 		public Timing Timing;
+		public bool IsEnabled;
 	}
 }

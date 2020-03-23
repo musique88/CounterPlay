@@ -1,10 +1,23 @@
+using System;
+
 namespace CounterPlay
 {
-	public class EffectSpecial : Effect
+	public class EffectSpecial : EffectSimple
 	{
-		public override void Do()
+		private Func<bool> function;
+
+		public EffectSpecial(
+			Func<bool> function,
+			int dosRemaining)
 		{
-			throw new System.NotImplementedException();
+			this.function = function;
+			DosRemaining = dosRemaining;
+		}
+		
+		public override void Do(Player Target)
+		{
+			function();
+			DosRemaining--;
 		}
 	}
 }
