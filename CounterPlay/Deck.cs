@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CounterPlay
 {
@@ -25,6 +26,11 @@ namespace CounterPlay
 	{
 		protected List<Card> Cards;
 
+		public Deck(Card[] cards)
+		{
+			Cards = cards.ToList();
+		}
+		
 		public Card[] Peek(int AmountOfCards)
 		{
 			List<Card> cards = new List<Card>();

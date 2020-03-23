@@ -23,8 +23,9 @@ namespace CounterPlay
 
 		public class CardList
 		{
-			private List<Card> Cards;
-			
+			public List<Card> Cards;
+			public Card this[int indexer] => Cards[indexer];
+
 			/// <summary>
 			/// Returns all Beginning of turn (BOT) effects from cards
 			/// </summary>
