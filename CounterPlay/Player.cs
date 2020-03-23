@@ -5,7 +5,7 @@ namespace CounterPlay
 {
 	public class Player
 	{
-		public int Vie;
+		public int HP;
 		public int Counter;
 
 		public List<Card> Hand;
